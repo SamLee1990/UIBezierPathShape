@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="UIBezierPathShape" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="cAT-Zp-hKw">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottomRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wonderwoman" translatesAutoresizingMaskIntoConstraints="NO" id="mZc-XM-zuo">
+                                <rect key="frame" x="0.0" y="222" width="390" height="400"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="superman" translatesAutoresizingMaskIntoConstraints="NO" id="H7a-eO-Rzn">
+                                <rect key="frame" x="0.0" y="222" width="390" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="Umr-09-hlK"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="batman" translatesAutoresizingMaskIntoConstraints="NO" id="sQk-Kj-zvu" customClass="SharpImageView" customModule="UIBezierPathShape" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="222" width="390" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="qbS-ah-BEx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.16849921740151597" green="0.16639637386165029" blue="0.2109874643337375" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="H7a-eO-Rzn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Q5-ne-dpK"/>
+                            <constraint firstItem="sQk-Kj-zvu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="40A-hl-hbk"/>
+                            <constraint firstItem="H7a-eO-Rzn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CgD-Ic-KKp"/>
+                            <constraint firstItem="sQk-Kj-zvu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="H8x-sa-0Ii"/>
+                            <constraint firstAttribute="trailing" secondItem="sQk-Kj-zvu" secondAttribute="trailing" id="Hvt-er-rxg"/>
+                            <constraint firstItem="cAT-Zp-hKw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LKW-yV-9VH"/>
+                            <constraint firstItem="cAT-Zp-hKw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MNv-Me-xMB"/>
+                            <constraint firstItem="cAT-Zp-hKw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PSP-hP-u8B"/>
+                            <constraint firstItem="mZc-XM-zuo" firstAttribute="height" secondItem="sQk-Kj-zvu" secondAttribute="height" id="QeC-ZV-j0G"/>
+                            <constraint firstItem="mZc-XM-zuo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ViZ-Hz-gv3"/>
+                            <constraint firstItem="mZc-XM-zuo" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZfL-hj-i0E"/>
+                            <constraint firstItem="mZc-XM-zuo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aUA-YD-21a"/>
+                            <constraint firstItem="H7a-eO-Rzn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b0l-dF-oja"/>
+                            <constraint firstItem="sQk-Kj-zvu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fsv-YH-20t"/>
+                            <constraint firstAttribute="bottom" secondItem="cAT-Zp-hKw" secondAttribute="bottom" id="iy8-wT-pKd"/>
+                            <constraint firstItem="mZc-XM-zuo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="myS-Fg-TKy"/>
+                            <constraint firstItem="H7a-eO-Rzn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rHN-3e-eVB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="supermanImageView" destination="H7a-eO-Rzn" id="nHi-cA-AJT"/>
+                        <outlet property="wonderwomanImageView" destination="mZc-XM-zuo" id="2Tg-rt-M9r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1249" y="-10"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="1125" height="2436"/>
+        <image name="batman" width="760" height="398"/>
+        <image name="superman" width="1200" height="800"/>
+        <image name="wonderwoman" width="746" height="1327"/>
+    </resources>
+</document>
