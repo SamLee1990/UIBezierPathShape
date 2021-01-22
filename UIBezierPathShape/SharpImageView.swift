@@ -27,7 +27,6 @@ class SharpImageView: UIImageView {
         path.addLine(to: CGPoint(x: 0, y: bounds.height * 0.6))
         path.close()
         
-        
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = path.cgPath
         
